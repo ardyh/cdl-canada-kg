@@ -1,0 +1,9 @@
+.DS_Store
+.venv
+.env
+2025/
+media/
+neo4j_out/
+roberta_ner_output/
+spacy_ner_output/
+sample_data/
