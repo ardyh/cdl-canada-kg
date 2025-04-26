@@ -2,6 +2,9 @@
 .venv
 .env
 2025/
+assets/
+data/
+env/
 media/
 neo4j_out/
 roberta_ner_output/
