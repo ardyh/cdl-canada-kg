@@ -1,6 +1,7 @@
 igraph 
 pacmap 
 plotly
+neo4j
 spacy>=3.6.0
 pandas>=1.5.0
 tqdm>=4.65.0 
