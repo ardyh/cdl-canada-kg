@@ -1,16 +1,13 @@
 from utils.kg_querier import KnowledgeGraphQuerier
 import streamlit as st
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 def get_kg_querier():
     if "kg_querier" not in st.session_state:
-        uri = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
-        user = os.environ.get("NEO4J_USER", "neo4j")
-        password = os.environ.get("NEO4J_PASSWORD", "your_password")
-        database = os.environ.get("NEO4J_DATABASE", "neo4j")
+        uri = st.secrets["neo4j"]["uri"]
+        user = st.secrets["neo4j"]["username"]
+        password = st.secrets["neo4j"]["password"]
+        database = st.secrets["neo4j"]["database"]
 
         st.session_state["kg_querier"] = KnowledgeGraphQuerier(
             uri=uri,
