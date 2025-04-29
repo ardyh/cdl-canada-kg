@@ -1,9 +1,10 @@
 .DS_Store
 .venv
-.env
+**.env
 2025/
 media/
 neo4j_out/
 roberta_ner_output/
 spacy_ner_output/
 sample_data/
+**__pycache__**
